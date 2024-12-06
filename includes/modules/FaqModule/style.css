@@ -1,0 +1,111 @@
+.divi-faq-container {
+    width: 100%;
+}
+
+.divi-faq-category {
+    margin-bottom: 30px;
+}
+
+.divi-faq-category-header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.divi-faq-category-header h3 {
+    padding: 0;
+    margin: 0;
+    color: #333;
+    font-size: 20px;
+    padding-right: 40px;
+}
+
+.divi-faq-category-header .et_pb_toggle_title:before {
+    content: "\33";
+    font-size: 16px;
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+    font-family: ETmodules!important;
+    transition: transform 0.3s ease;
+}
+
+.divi-faq-category-header.open .et_pb_toggle_title:before {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.divi-faq-category-content {
+    display: none;
+    padding: 10px 0;
+}
+
+.divi-faq-category-content.open {
+    display: block;
+}
+
+/* Styles Divi par défaut pour les accordéons */
+.et_pb_toggle {
+    border: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+}
+
+.et_pb_toggle_title {
+    position: relative;
+    padding: 20px 50px 20px 20px;
+    cursor: pointer;
+}
+
+.et_pb_toggle_title h5 {
+    padding: 0;
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.et_pb_toggle_title:before {
+    content: "\33";
+    font-size: 16px;
+    right: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc;
+    font-family: ETmodules!important;
+    transition: transform 0.3s ease;
+}
+
+.et_pb_toggle_open .et_pb_toggle_title:before {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.et_pb_toggle_content {
+    padding: 20px;
+    position: relative;
+    background-color: #fff;
+}
+
+.et_pb_toggle_content p:last-of-type {
+    padding-bottom: 0;
+}
+
+/* Animation */
+.et_pb_toggle_content {
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
